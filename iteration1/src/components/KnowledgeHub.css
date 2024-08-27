@@ -1,0 +1,39 @@
+
+.KnowledgeHub {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    gap: 2%;
+}
+
+.HubUnit4 {
+    background-color: #eee;
+    width: 48%;
+    text-align: center;
+    border-radius: 16px;
+    padding: 15px;
+    box-sizing: border-box;
+    margin-bottom: 2%;
+    transition: all 0.3s ease;
+}
+
+.HubUnit4:hover {
+    transform: translateY(-5px); /* 悬浮时向上移动 */
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1); /* 添加阴影 */
+    background-color: #f0f0f0; /* 轻微改变背景色 */
+}
+
+.HubUnitl1 {
+    background-color: #eee;
+    width: '45%';
+    text-align: center;
+    border-radius: 16px;
+    margin-top: 10px;
+    margin-left: auto;
+    margin-right: auto;
+}
+.HubUnitl1:hover {
+    transform: translateY(-5px); /* 悬浮时向上移动 */
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1); /* 添加阴影 */
+    background-color: #f0f0f0; /* 轻微改变背景色 */
+}

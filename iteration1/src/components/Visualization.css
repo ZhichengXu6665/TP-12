@@ -1,0 +1,17 @@
+.visualizationContainer {
+    width: 80%;
+    height: 400px;
+    margin: 100px auto;
+    overflow: hidden;
+    border: 2px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.visualizationContainer iframe {
+    width: 1920px;
+    height: 1080px;
+    top: 0;
+    left: 0;
+    transform-origin: top left;
+    transform: scale(0.5);
+}
