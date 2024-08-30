@@ -1,0 +1,84 @@
+.help-council-container {
+    padding: 30px; /* 调整了整体内边距 */
+    background-color: #f9f9f9;
+    border-radius: 8px;
+    text-align: center;
+}
+
+.help-council-container h2 {
+    font-size: 24px; /* 调整了标题大小 */
+    color: #f8f6f6;  /* 白色文字 */
+    margin-bottom: 20px; /* 调整了标题与卡片之间的距离 */
+    background-color: #8c6bae; /* 紫色背景 */
+    border-radius: 25px; /* 圆角边框 */
+    padding: 8px 16px; /* 调整了内边距 */
+    display: inline-block; /* 使背景仅围绕文字 */
+}
+
+.help-council-section {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr); /* 定义两列布局 */
+    gap: 15px; /* 调整了卡片之间的间距 */
+}
+
+.help-card {
+    background-color: #ffffff;
+    border-radius: 8px;
+    box-shadow: 0 3px 6px rgba(0, 0, 0, 0.1);
+    padding: 15px; /* 调整了卡片内边距 */
+    text-align: left;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.dual-card {
+    display: flex;
+    align-items: center;
+}
+
+.help-image {
+    width: 100%;
+    height: auto;
+    border-radius: 8px;
+    margin-bottom: 10px; /* 调整了图片与文本之间的距离 */
+    object-fit: cover;
+}
+
+.help-image-left {
+    width: 50%; /* 将 seeMoreImage 图片宽度设为35% */
+    height: auto;
+    border-radius: 8px;
+    margin-right: 10px; /* 调整了图片与文本之间的距离 */
+    object-fit: cover;
+    display: flex;
+    flex-direction: column;
+    justify-content: center; /* 垂直居中 */
+    align-items: center; /* 水平居中 */
+}
+
+.help-card:hover {
+    transform: translateY(-4px); /* 调整了卡片悬停效果 */
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.15);
+}
+
+.help-content {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.help-content h3 {
+    font-size: 18px; /* 调整了标题字体大小 */
+    color: #333;
+    margin-bottom: 8px; /* 调整了标题与内容之间的距离 */
+}
+
+.help-content p {
+    font-size: 13px; /* 调整了内容字体大小 */
+    color: #666;
+    margin-bottom: 8px;
+    line-height: 1.4;
+}

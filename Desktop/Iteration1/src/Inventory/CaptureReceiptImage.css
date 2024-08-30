@@ -1,0 +1,30 @@
+/* src/components/CaptureReceiptImage.css */
+.capture-receipt {
+    text-align: center;
+    margin-top: 20px;
+}
+
+.upload-button {
+    background-color: #9370DB;
+    color: white;
+    padding: 10px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease, transform 0.3s ease;
+}
+
+.upload-button:hover {
+    background-color: #805DBD;
+    transform: scale(1.05);
+}
+
+.image-preview {
+    margin-top: 20px;
+}
+
+.image-preview img {
+    max-width: 100%;
+    height: auto;
+    border: 2px solid #9370DB;
+    border-radius: 10px;
+}

@@ -1,0 +1,115 @@
+.upload-container {
+    padding: 1rem;
+    max-width: 28rem;
+    margin-left: auto;
+    margin-right: auto;
+    background-color: white;
+    border-radius: 0.75rem;
+    box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1), 0 2px 4px -1px rgba(0, 0, 0, 0.06);
+  }
+  
+  .upload-title {
+    font-size: 1.25rem;
+    font-weight: bold;
+    margin-bottom: 1rem;
+  }
+  
+  .upload-form {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+  }
+  
+  .file-input-label,
+  .file-input,
+  .file-input::file-selector-button {
+    display: none;  
+  }
+  .local-storage-button {
+    width: 100%;
+    padding: 0.5rem 1rem;
+    border: 1px solid transparent;
+    border-radius: 0.375rem;
+    box-shadow: 0 1px 2px 0 rgba(0, 0, 0, 0.05);
+    font-size: 0.875rem;
+    font-weight: 500;
+    color: white;
+    background-color: #2563eb;  
+    cursor: pointer;
+    transition: background-color 0.2s;
+  }
+
+  .local-storage-button:hover {
+    background-color: #1d4ed8;
+  }
+
+  .feedback-container {
+    margin-top: 1rem;
+    padding: 0.5rem;
+    border-radius: 0.25rem;
+  }
+  
+  .feedback-container.idle {
+    background-color: #f3f4f6;
+  }
+  
+  .feedback-container.uploading {
+    background-color: #fef3c7;
+  }
+  
+  .feedback-container.success {
+    background-color: #d1fae5;
+  }
+  
+  .feedback-container.error {
+    background-color: #fee2e2;
+  }
+  
+  .feedback-text {
+    font-size: 0.875rem;
+    color: #1f2937;
+  }
+  
+  .item-list-container {
+    margin-top: 1rem;
+    padding: 0.5rem;
+    background-color: #f3f4f6;
+    border-radius: 0.25rem;
+  }
+  
+  .item-list-container h3 {
+    font-size: 1rem;
+    font-weight: 600;
+    margin-bottom: 0.5rem;
+  }
+  
+  .item-list-container ul {
+    list-style-type: none;
+    padding-left: 0;
+  }
+  
+  .item-list-container li {
+    font-size: 0.875rem;
+    color: #1f2937;
+    margin-bottom: 0.25rem;
+  }
+
+  .api-response-container {
+    margin-top: 1rem;
+    padding: 0.5rem;
+    background-color: #f3f4f6;
+    border-radius: 0.25rem;
+  }
+  
+  .api-response-container h3 {
+    font-size: 1rem;
+    font-weight: 600;
+    margin-bottom: 0.5rem;
+  }
+  
+  .api-response-container pre {
+    white-space: pre-wrap;
+    word-wrap: break-word;
+    font-size: 0.875rem;
+    color: #1f2937;
+  }
