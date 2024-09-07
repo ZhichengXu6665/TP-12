@@ -1,0 +1,61 @@
+/* src/components/Navbar.css */
+@font-face {
+    font-family: 'Dancing Script';
+    font-style: normal;
+    font-weight: 700;
+    font-display: swap; /* 这将使用系统默认字体直到Google字体加载完成 */
+    src: url(https://fonts.googleapis.com/css2?family=Dancing+Script:wght@700&display=swap);
+}
+
+.navbar {
+    background-color: #9370DB; /* 导航栏背景色 */
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 20px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.logo {
+    display: flex;
+    align-items: center;
+}
+
+.navbar .logo .logo-text {
+    font-family: 'Dancing Script', cursive !important;
+    font-size: 24px !important;
+    color: white !important;
+    font-weight: 700 !important;
+}
+
+
+
+ul {
+    list-style-type: none;
+    display: flex;
+    margin: 0;
+    padding: 0;
+}
+
+ul li {
+    margin: 0 15px;
+    cursor: pointer;
+    padding: 10px 15px;
+    color: white;
+    font-weight: bold;
+    border-radius: 20px; /* 使菜单项有圆角 */
+}
+
+ul li:hover {
+    background-color: #805DBD; /* 略深的背景色，表示悬停 */
+}
+
+ul li.active {
+    background-color: white; /* 高亮当前页面的背景色 */
+    color: #9370DB; /* 突出显示文字颜色 */
+}
+
+ul li.active:hover {
+    background-color: white; /* 保持高亮项在悬停时背景色不变 */
+    color: #9370DB;
+}

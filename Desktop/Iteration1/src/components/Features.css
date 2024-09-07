@@ -1,0 +1,49 @@
+/* src/components/Features.css */
+.features {
+    display: flex;
+    justify-content: space-around;
+    padding: 20px;
+    background-color: #f9f9f9;
+}
+
+.feature {
+    flex: 1;
+    margin: 10px;
+    text-align: center;
+    cursor: pointer;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    background: none; /* 去掉白色背景 */
+    box-shadow: none; /* 去掉阴影效果 */
+}
+
+.feature img {
+    width: 120px; /* 调整图片大小 */
+    height: 120px;
+    margin-bottom: 15px;
+}
+
+.feature p {
+    margin: 0;
+    font-size: 16px;
+    color: #333;
+}
+
+.feature:hover {
+    transform: translateY(-10px) scale(1.1); /* 鼠标悬浮时向上移动并放大 */
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2); /* 增加阴影效果 */
+}
+
+@keyframes fadeInUp {
+    from {
+        opacity: 0;
+        transform: translateY(20px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+.features .feature {
+    animation: fadeInUp 1s ease-in-out;
+}
