@@ -1,0 +1,16 @@
+/* src/components/NotificationBell.css */
+.notification-bell {
+    margin-left: 20px; /* 确保铃铛图标与导航项有一些间距 */
+}
+
+.notification-bell .MuiIconButton-root {
+    color: white; /* 铃铛图标颜色 */
+}
+
+.MuiTableCell-root {
+    padding: 8px 16px; /* 增加表格单元格的内边距 */
+}
+
+.MuiPaper-root {
+    background-color: #f9f9f9; /* 更改背景颜色 */
+}
