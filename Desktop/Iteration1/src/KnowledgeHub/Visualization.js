@@ -22,10 +22,10 @@ const Visualization = () => {
         });
 
         function processData(data) {
-            // 获取所有 Council 名称并去重
+            
             const allCouncils = [...new Set(data.map(row => row.council))];
             setCouncils(allCouncils);
-            setCouncil(allCouncils[0]); // 默认选择第一个 Council
+            setCouncil(allCouncils[0]); 
         }
     }, []);
 

@@ -58,6 +58,26 @@
     background-color: #F3E5F5;
 }
 
+.inventory-table input[type="number"], 
+.inventory-table select,
+.inventory-table input[type="date"] {
+    padding: 5px 10px; /* 增加内边距 */
+    font-size: 14px; /* 适中的字体大小 */
+    margin: 0;
+    border: 1px solid #9370DB; /* 边框颜色与表格保持一致 */
+    border-radius: 5px; /* 圆角边框 */
+    transition: border-color 0.3s ease, box-shadow 0.3s ease; /* 平滑过渡效果 */
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* 添加阴影效果 */
+    width: auto; /* 自适应宽度 */
+}
+
+.inventory-table input[type="number"]:focus,
+.inventory-table select:focus,
+.inventory-table input[type="date"]:focus {
+    border-color: #805DBD; /* 聚焦状态的边框颜色 */
+    box-shadow: 0 0 8px rgba(128, 93, 189, 0.4); /* 聚焦时的阴影效果 */
+}
+
 .action-button {
     background-color: #9370DB;
     color: white;
@@ -65,8 +85,14 @@
     border-radius: 5px;
     padding: 5px 10px;
     cursor: pointer;
+    transition: background-color 0.3s ease;
 }
 
 .action-button:hover {
     background-color: #805DBD;
+}
+
+input[type="checkbox"] {
+    transform: scale(1.2); /* 放大复选框 */
+    cursor: pointer;
 }

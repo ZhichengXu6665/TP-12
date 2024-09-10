@@ -5,21 +5,23 @@
     margin: 40px auto;
     max-width: 800px;
     border-radius: 16px; /* 更圆的边角 */
-    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2); /* 更明显的阴影效果 */
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.2); /* 更明显的阴影效果 */
     text-align: center; /* 使文字居中 */
-    animation: fadeIn 2s ease-in-out;
-    transition: transform 0.3s ease;
+    animation: slideIn 1s ease-out, fadeIn 2s ease-in-out; /* 添加滑入和淡入动画 */
+    transition: transform 0.3s ease, background-color 0.3s ease;
 }
 
 .introduction:hover {
     transform: scale(1.05); /* 鼠标悬浮时轻微放大 */
+    
 }
 
 .introduction h2 {
     color: #4B0082; /* 深紫色标题 */
     font-family: 'Comic Sans MS', cursive, sans-serif; /* 手写风格字体 */
-    font-size: 26px;
+    font-size: 28px;
     margin-bottom: 20px;
+    animation: bounceIn 1s ease; /* 标题的弹跳动画 */
 }
 
 .introduction p {
@@ -28,9 +30,45 @@
     font-size: 18px;
     line-height: 1.6; /* 增加行间距，提高可读性 */
     margin: 0 10px;
+    opacity: 0;
+    transform: translateY(20px);
+    animation: fadeInText 1.5s ease-in-out forwards;
+    animation-delay: 1s; /* 延迟动画以同步标题 */
 }
 
 @keyframes fadeIn {
+    from {
+        opacity: 0;
+        transform: translateY(20px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+@keyframes slideIn {
+    from {
+        transform: translateX(-100%);
+    }
+    to {
+        transform: translateX(0);
+    }
+}
+
+@keyframes bounceIn {
+    0%, 20%, 50%, 80%, 100% {
+        transform: translateY(0);
+    }
+    40% {
+        transform: translateY(-20px);
+    }
+    60% {
+        transform: translateY(-10px);
+    }
+}
+
+@keyframes fadeInText {
     from {
         opacity: 0;
         transform: translateY(20px);

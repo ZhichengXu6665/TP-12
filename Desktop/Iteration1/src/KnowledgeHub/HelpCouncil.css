@@ -1,67 +1,70 @@
 .help-council-container {
-    padding: 30px; /* 调整了整体内边距 */
+    padding: 30px;
     background-color: #f9f9f9;
     border-radius: 8px;
     text-align: center;
 }
 
 .help-council-container h2 {
-    font-size: 24px; /* 调整了标题大小 */
-    color: #f8f6f6;  /* 白色文字 */
-    margin-bottom: 20px; /* 调整了标题与卡片之间的距离 */
-    background-color: #8c6bae; /* 紫色背景 */
-    border-radius: 25px; /* 圆角边框 */
-    padding: 8px 16px; /* 调整了内边距 */
-    display: inline-block; /* 使背景仅围绕文字 */
+    font-size: 24px;
+    color: #f8f6f6;
+    margin-bottom: 20px;
+    background-color: #8c6bae;
+    border-radius: 25px;
+    padding: 8px 16px;
+    display: inline-block;
 }
 
 .help-council-section {
     display: grid;
-    grid-template-columns: repeat(2, 1fr); /* 定义两列布局 */
-    gap: 15px; /* 调整了卡片之间的间距 */
+    grid-template-columns: repeat(2, 1fr);
+    gap: 15px;
 }
 
 .help-card {
     background-color: #ffffff;
     border-radius: 8px;
     box-shadow: 0 3px 6px rgba(0, 0, 0, 0.1);
-    padding: 15px; /* 调整了卡片内边距 */
+    padding: 15px;
     text-align: left;
     transition: transform 0.3s ease, box-shadow 0.3s ease;
-    height: 100%;
     display: flex;
     flex-direction: column;
     justify-content: space-between;
 }
 
-.dual-card {
-    display: flex;
-    align-items: center;
+.help-card:hover {
+    transform: translateY(-4px);
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.15);
 }
 
 .help-image {
     width: 100%;
     height: auto;
-    border-radius: 8px;
-    margin-bottom: 10px; /* 调整了图片与文本之间的距离 */
+    border-radius: 6px;
+    margin-bottom: 10px; /* Adjusted for better spacing */
     object-fit: cover;
+}
+
+.help-image-compost {
+    width: 100%;
+    height: 54%;
+    border-radius: 8px;
+    margin-bottom: -20px;
+    object-fit: cover;
+    justify-content: center;
 }
 
 .help-image-left {
-    width: 50%; /* 将 seeMoreImage 图片宽度设为35% */
+    width: 50%;
     height: auto;
     border-radius: 8px;
-    margin-right: 10px; /* 调整了图片与文本之间的距离 */
+    margin-right: 10px;
     object-fit: cover;
     display: flex;
     flex-direction: column;
-    justify-content: center; /* 垂直居中 */
-    align-items: center; /* 水平居中 */
-}
-
-.help-card:hover {
-    transform: translateY(-4px); /* 调整了卡片悬停效果 */
-    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.15);
+    justify-content: center;
+    align-items: center;
 }
 
 .help-content {
@@ -71,14 +74,49 @@
 }
 
 .help-content h3 {
-    font-size: 18px; /* 调整了标题字体大小 */
-    color: #333;
-    margin-bottom: 8px; /* 调整了标题与内容之间的距离 */
+    font-size: 18px;
+    margin-bottom: 8px;
+    color: #f8f6f6;
+    background-color: #8c6bae;
+    border-radius: 25px;
+    padding: 8px 16px;
+    text-align: center;
+    display: inline-block;
 }
 
 .help-content p {
-    font-size: 13px; /* 调整了内容字体大小 */
+    font-size: 13px;
     color: #666;
     margin-bottom: 8px;
     line-height: 1.4;
+}
+.small-card {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.help-content.center-content {
+    display: flex;
+    flex-direction: column;
+    align-items: center; /* 居中图片和标题 */
+}
+
+.help-image-center {
+    width: 80%;
+    height: auto;
+    border-radius: 8px;
+    margin-bottom: 10px;
+    object-fit: cover;
+    display: block; /* 确保图片作为块级元素 */
+    margin-left: auto; /* 左侧自动边距 */
+    margin-right: auto; /* 右侧自动边距 */
+}
+
+
+.center-title {
+    font-size: 18px; /* 可根据需要调整标题字体大小 */
+    color: #333;
+    margin-top: 10px; /* 确保标题与图片的间距适当 */
+    text-align: center;
 }

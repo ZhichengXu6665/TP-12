@@ -16,7 +16,7 @@
 .quote-circle {
     width: 280px; /* 圆形的大小 */
     height: 280px;
-    background-color: #9370DB; /* 紫色背景 */
+    background-color: #8c6bae; /* 紫色背景 */
     border-radius: 50%; /* 使其成为圆形 */
     display: flex;
     align-items: center;

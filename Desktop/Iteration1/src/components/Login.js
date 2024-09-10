@@ -7,7 +7,7 @@ function Login({ onLogin }) {
 
   const handleSubmit = (e) => {
     e.preventDefault();
-    if (password === 'tp12') {  // 替换 'yourpassword' 为你想要的密码
+    if (password === 'ecopantry_tp12') {  // 替换 'yourpassword' 为你想要的密码
       onLogin();
     } else {
       alert('Wrong! try again');
