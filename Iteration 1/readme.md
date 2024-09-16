@@ -1,1 +1,1 @@
-
+"ecopantrypantry_fastapi.py" has the api to read text from image. The "Online receipt.png" is the sample image file. The "OCR.ipynb" notebook contains the different ways tried to test reading text from image. 
