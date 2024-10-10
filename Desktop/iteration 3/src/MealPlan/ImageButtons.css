@@ -1,0 +1,36 @@
+.image-buttons {
+    position: fixed; /* 将容器固定在视口 */
+    bottom: 0;       /* 贴紧视口底部 */
+    left: 0;         /* 贴紧视口左侧 */
+    width: 100%;     /* 占满宽度 */
+    height: auto;    /* 高度根据内容调整 */
+    box-sizing: border-box;
+    pointer-events: none; /* 允许子元素接收点击事件 */
+}
+
+/* 调整按钮样式 */
+.image-button {
+    width: 200px;
+    height: auto;
+    cursor: pointer;
+    transition: transform 0.2s ease;
+    border: none;
+    box-shadow: none;
+    position: absolute;
+    bottom: 20px; /* 距离底部20px */
+    pointer-events: auto; /* 允许按钮自身接收点击事件 */
+}
+
+/* 左侧按钮，靠左侧边缘 */
+.left-button {
+    left: 20px; /* 距离左侧20px */
+}
+
+/* 右侧按钮，靠右侧边缘 */
+.right-button {
+    right: 20px; /* 距离右侧20px */
+}
+
+.image-button:hover {
+    transform: scale(1.05); /* 鼠标悬浮时放大 */
+}
