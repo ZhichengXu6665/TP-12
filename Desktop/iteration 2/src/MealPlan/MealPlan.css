@@ -1,0 +1,94 @@
+.MealPlanTop {
+  display: flex;
+  max-width: 100%;
+  justify-content: space-between;
+}
+
+.MealPlanTopContent {
+  flex: 1;
+  margin:auto 10px;
+}
+
+.MealPlanTopContent h2 {
+  font-size: 2.5rem;
+  font-weight: bold;
+  margin-bottom: 1rem;
+  color: #333;
+}
+
+.MealPlanTopContent p {
+  font-size: 1.1rem;
+  color: #666;
+}
+
+.MealPlanTopImage {
+  flex: 1;
+  max-width: 100%;
+  height: 400px;
+}
+
+.MealPlanTopImage img {
+  max-width: 100%;
+  height: auto;
+}
+
+.MealPlanSubTitle {
+  margin-top: 2rem;
+  text-align: center;
+}
+
+.MealPlanSubTitle h3 {
+  font-size: 2rem;
+  font-weight: bold;
+  margin-bottom: 1rem;
+  color: #333;
+}
+
+.MealPlanSubTitle p {
+  font-size: 1.1rem;
+  color: #666;
+  padding: 10px auto;
+}
+
+.RecipeSwitchContainer {
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+  padding: 15px ;
+  
+}
+
+.RecipePageText{
+  padding: 10px;
+  border-radius: 5px;
+  margin: 0 auto;
+  text-align: center;
+  max-width: 600px;
+  background-color: #f8e6ff;
+}
+
+.ApiError {
+  width: 600px;
+  border: 2px solid red;
+  border-radius: 5px;
+  margin: 10px auto;
+  padding: 10px auto;
+  text-align: center;
+}
+
+.ApiError P {
+  color: red;
+}
+
+
+.RecipeSwitch {
+  background-color: #805DBD;
+  color: white;
+  border: none;
+  border-radius: 30px;
+  padding: 25px 45px;
+  margin: 0 10px;
+  font-size: 16px;
+  cursor: pointer;
+  transition: background-color 0.3s ease, transform 0.2s ease;
+  }

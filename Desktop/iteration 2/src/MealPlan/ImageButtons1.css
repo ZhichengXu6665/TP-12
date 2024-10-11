@@ -1,0 +1,38 @@
+/* 提高样式优先级 */
+.custom-image-buttons {
+    position: relative !important;
+    height: auto !important;
+    box-sizing: border-box !important;
+    pointer-events: none !important;
+}
+
+/* 修改按钮样式 */
+.custom-image-button {
+    width: 200px !important;
+    height: auto !important;
+    cursor: pointer !important;
+    transition: transform 0.2s ease !important;
+    border: none !important;
+    box-shadow: none !important;
+    position: absolute !important; /* 设置为绝对定位 */
+    pointer-events: auto !important;
+}
+
+/* 修改为左下角固定定位 */
+.custom-left-button {
+    position: absolute !important; /* 改为绝对定位 */
+    bottom: 20px !important; /* 距离底部20px */
+    left: 20px !important; /* 距离左侧20px */
+}
+
+/* 修改为右下角固定定位 */
+.custom-right-button {
+    position: absolute !important; /* 改为绝对定位 */
+    bottom: 20px !important; /* 距离底部20px */
+    right: 20px !important; /* 距离右侧20px */
+}
+
+/* 鼠标悬浮时的放大效果 */
+.custom-image-button:hover {
+    transform: scale(1.05) !important; /* 鼠标悬浮时放大 */
+}

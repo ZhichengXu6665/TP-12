@@ -1,0 +1,37 @@
+/* 提高样式优先级 */
+.custom-fixed-buttons {
+    position: fixed !important; /* 设置为固定定位 */
+    bottom: 20px !important;    /* 距离底部20px */
+    right: 20px !important;     /* 距离右侧20px */
+    pointer-events: none !important; /* 允许子元素接收点击事件 */
+}
+
+/* 调整按钮样式 */
+.custom-fixed-button {
+    width: 200px !important;     /* 调整宽度为 80px */
+    height: 120px !important;    /* 调整高度为 40px */
+    cursor: pointer !important;
+    transition: transform 0.2s ease !important;
+    border: none !important;
+    box-shadow: none !important;
+    pointer-events: auto !important; /* 允许按钮自身接收点击事件 */
+}
+
+/* 鼠标悬浮时的放大效果 */
+.custom-fixed-button:hover {
+    transform: scale(1.05) !important; /* 鼠标悬浮时放大 */
+}
+
+/* 左侧按钮，固定在左下角 */
+.custom-left-fixed-button {
+    position: fixed !important; /* 设置为固定定位 */
+    bottom: 20px !important;    /* 距离底部20px */
+    left: 20px !important;      /* 距离左侧20px */
+}
+
+/* 右侧按钮，固定在右下角 */
+.custom-right-fixed-button {
+    position: fixed !important; /* 设置为固定定位 */
+    bottom: 20px !important;    /* 距离底部20px */
+    right: 20px !important;     /* 距离右侧20px */
+}
